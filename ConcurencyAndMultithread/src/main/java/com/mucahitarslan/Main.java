@@ -13,7 +13,7 @@ public class Main {
         Thread thread = new Thread(runnable);
         thread.start();
 
-        ExecutorService executorService = Executors.newFixedThreadPool(10);
+        ExecutorService executorService = Executors.newCachedThreadPool(); //newFixedThreadPool
         List<Runnable> runnableList = Arrays.asList(
                 () -> System.out.println("Runnable 1"),
                 () -> System.out.println("Runnable 2"),
