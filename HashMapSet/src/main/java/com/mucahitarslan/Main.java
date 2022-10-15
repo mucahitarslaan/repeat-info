@@ -7,7 +7,6 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-
         HashMap keyValue = new HashMap();
         keyValue.put("Türkiye" , "Ankara");
         keyValue.put("Fransa" , "Paris");
@@ -21,5 +20,6 @@ public class Main {
             Map.Entry item = (Map.Entry) iterator.next();
             System.out.println(item.getKey() + " -> " + item.getValue());
         }
+
     }
 }
