@@ -1,7 +1,6 @@
 package com.mucahitarslan;
 
-import java.util.Arrays;
-
+//https://medium.com/@mucahitarslaan/java-de%C4%9Fer-ve-referans-tipler-daf007d43254
 public class Main {
     public static void main(String[] args) {
 
