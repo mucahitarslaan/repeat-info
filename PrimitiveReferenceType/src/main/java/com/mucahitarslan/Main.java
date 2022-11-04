@@ -24,6 +24,11 @@ public class Main {
         System.out.println(sayilar1);
         System.out.println(sayilar1[0]);  //OUTPUT : 9
 
+        // Burada dikkat edilmesi gereken bir husus var.
+        // Sayilar2'nin 0. indexine atama yapıldığında, yeni bir
+        // referans adresi oluşur. Heap üzerinde oluşan yeni referans
+        // adresi tutulur. Diğerleri de Garbage Collector ile temizlenir
+
     }
 }
 
