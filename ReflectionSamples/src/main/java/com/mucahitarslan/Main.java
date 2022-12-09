@@ -1,11 +1,66 @@
 package com.mucahitarslan;
-import java.util.Timer;
-import java.util.TimerTask;
+
+import java.lang.reflect.InvocationTargetException;
 
 class Main {
     public static void main(String[] args)
     {
-        /*var timer = new Timer();
+        try {
+            Class<?> cls = Singleton.class;
+
+            for (int i = 0; i < 10; ++i) {
+                var ctor = cls.getDeclaredConstructor();
+
+                var createdField = cls.getDeclaredField("ms_created");
+
+                createdField.setAccessible(true);
+                createdField.setBoolean(null, false);
+                createdField.setAccessible(false);
+
+                ctor.setAccessible(true);
+                var obj = ctor.newInstance();
+                ctor.setAccessible(false);
+
+                //...
+            }
+        }
+        catch (NoSuchMethodException | InvocationTargetException | InstantiationException
+               | IllegalAccessException | NoSuchFieldException e) {
+            var cause = e.getCause();
+
+            System.out.println(cause == null ? e.getMessage() : cause.getMessage());
+        }
+    }
+}
+
+class Singleton {
+    private static boolean ms_created;
+    public static final Singleton INSTANCE = new Singleton();
+    private int m_x;
+
+    private Singleton()
+    {
+        if (ms_created)
+            throw new UnsupportedOperationException("Object can not created by this way");
+
+        ms_created = true;
+        System.out.println("Singleton.Singleton()");
+    }
+
+    public int getX()
+    {
+        return m_x;
+    }
+
+    public void setX(int x)
+    {
+        //...
+        m_x = x;
+    }
+
+}
+
+/*var timer = new Timer();
 
         timer.schedule(new TimerTask() {
             public void run()
@@ -16,23 +71,4 @@ class Main {
         //Console.writeLine("main ends");
 
         //.
-
-         */
-
-        Class<Sample> clsSample = Sample.class;
-        Class<Mample> clsMample = Mample.class;
-        Class<String> clsString = String.class;
-        Class<?> clsDouble = double.class;
-
-        Class<String> clasString1 = String.class;
-        Class<String> clasString2 = String.class;
-
-        System.out.println(clasString1 == clasString2);
-    }
-}
-
-class Sample{
-}
-
-class Mample{
-}
+*/
