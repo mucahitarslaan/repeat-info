@@ -30,6 +30,7 @@ class Main {
 
             System.out.println(cause == null ? e.getMessage() : cause.getMessage());
         }
+
     }
 }
 
@@ -47,9 +48,11 @@ class Singleton {
         System.out.println("Singleton.Singleton()");
     }
 
-    public int getX()
-    {
+    public int getX() {
         return m_x;
+    }
+    public static int getX(int i){
+        return 1;
     }
 
     public void setX(int x)
