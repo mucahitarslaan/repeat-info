@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="AbstractClasses" />
-        <module name="FileIO" />
+        <module name="SolidPrinciples" />
         <module name="ReflectionSamples" />
+        <module name="FileIO" />
       </profile>
     </annotationProcessing>
   </component>
