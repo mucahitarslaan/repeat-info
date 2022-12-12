@@ -6,20 +6,19 @@ import java.util.List;
 
 class Main {
     public static void main(String[] args) {
-        AreaCalculator areaCalculator = new AreaCalculator();
+        IAreaCalculator areaCalculator = new AreaCalculator();
+        IAreaCalculator areaCalculatorv2 = new AreaCalculatorv2(); // just a few changes
+
         Circle circle = new Circle(10);
         Square square = new Square(10);
         Cube cube = new Cube();
-        Rectangle rectangle = new Rectangle();
+        ShapesPrinter printer = new ShapesPrinter(areaCalculatorv2); // just a few changes
         List<Shape> shapes = List.of(
                 circle,
                 square,
                 cube);
-        int sum = areaCalculator.sum(shapes);
-
-        ShapesPrinter printer = new ShapesPrinter();
-        System.out.println(printer.json(sum));
-        System.out.println(printer.csv(sum));
+        System.out.println(printer.json(shapes));
+        System.out.println(printer.csv(shapes));
     }
 
 }

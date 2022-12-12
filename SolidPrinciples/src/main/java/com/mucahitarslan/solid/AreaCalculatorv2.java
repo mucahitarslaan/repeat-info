@@ -2,7 +2,7 @@ package com.mucahitarslan.solid;
 
 import java.util.List;
 
-public class AreaCalculator implements IAreaCalculator {
+public class AreaCalculatorv2 implements IAreaCalculator {
 
     public int sum(List<Shape> shapes){
         int sum = 0;
