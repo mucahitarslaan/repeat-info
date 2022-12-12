@@ -17,5 +17,4 @@ public class AreaCalculator {
         }
         return sum;
     }
-
 }
