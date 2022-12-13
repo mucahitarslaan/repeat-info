@@ -1,6 +1,8 @@
-package com.mucahitarslan.solid;
+package com.mucahitarslan.solid.shape;
 
-public class Circle implements Shape{
+import com.mucahitarslan.solid.shape.Shape;
+
+public class Circle implements Shape {
     private final int radius;
 
     public Circle(int radius){

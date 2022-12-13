@@ -1,4 +1,6 @@
-package com.mucahitarslan.solid;
+package com.mucahitarslan.solid.calculator;
+
+import com.mucahitarslan.solid.shape.Shape;
 
 import java.util.List;
 

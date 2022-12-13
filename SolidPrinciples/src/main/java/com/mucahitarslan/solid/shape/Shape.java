@@ -1,4 +1,4 @@
-package com.mucahitarslan.solid;
+package com.mucahitarslan.solid.shape;
 
 public interface Shape {
     double area();

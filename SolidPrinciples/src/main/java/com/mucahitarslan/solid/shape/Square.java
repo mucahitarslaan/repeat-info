@@ -1,6 +1,8 @@
-package com.mucahitarslan.solid;
+package com.mucahitarslan.solid.shape;
 
-public class Square implements Shape{
+import com.mucahitarslan.solid.shape.Shape;
+
+public class Square implements Shape {
     private final int length;
 
     public Square(int length){

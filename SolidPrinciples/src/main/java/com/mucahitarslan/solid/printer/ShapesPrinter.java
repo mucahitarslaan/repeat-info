@@ -1,4 +1,7 @@
-package com.mucahitarslan.solid;
+package com.mucahitarslan.solid.printer;
+
+import com.mucahitarslan.solid.calculator.IAreaCalculator;
+import com.mucahitarslan.solid.shape.Shape;
 
 import java.util.List;
 

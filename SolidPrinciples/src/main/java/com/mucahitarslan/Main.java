@@ -1,6 +1,10 @@
 package com.mucahitarslan;
 
-import com.mucahitarslan.solid.*;
+import com.mucahitarslan.solid.calculator.AreaCalculator;
+import com.mucahitarslan.solid.calculator.AreaCalculatorv2;
+import com.mucahitarslan.solid.calculator.IAreaCalculator;
+import com.mucahitarslan.solid.printer.ShapesPrinter;
+import com.mucahitarslan.solid.shape.*;
 
 import java.util.List;
 
@@ -20,5 +24,4 @@ class Main {
         System.out.println(printer.json(shapes));
         System.out.println(printer.csv(shapes));
     }
-
 }
