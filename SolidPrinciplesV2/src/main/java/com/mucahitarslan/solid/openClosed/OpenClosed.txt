@@ -1,0 +1,15 @@
+- Bir sınıf ya da fonksiyon var olan özellikleri korumalı yani davranışını değiştirmiyor olmalı ve yeni özellikler kazanabilmelidir.
+
+- Sınıflarımız/fonksiyonlarımız değişikliğe kapalı ancak yeni davranışların eklenmesine açık olmalıdır.
+
+- Bu prensip; sürdürülebilir ve tekrar kullanılabilir yapıda kod yazmanın temelini oluşturur.  Robert C. Martin
+
+-   Open
+- Sınıf için yeni davranışlar eklenebilmesini sağlar. Gereksinimler değiştiğinde, yeni gereksinimlerin karşılanabilmesi için
+  bir sınıfa yeni veya farklı davranışlar eklenebilir olmasıdır.
+
+-   Closed
+- Bir sınıf temel özelliklerinin değişimi ise mümkün olmamalıdır.
+
+
+

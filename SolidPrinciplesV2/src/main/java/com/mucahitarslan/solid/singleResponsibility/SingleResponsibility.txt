@@ -1,0 +1,18 @@
+- Single Responsibility; Tek işi, tek sorumlulukta yapma sanatı olarak özetlenebilir.
+
+- Eğer geliştirdiğiniz sınıf ya da fonksiyon birden fazla amaca hizmet ediyorsa, bu kurala aykırı bir geliştirme
+  sürecinde olduğunuz anlamına geliyor. Bunu farkettiğinizde amaçlara uygun olarak parçalamanız gerekmektedir.
+
+- Bir sınıf ne kadar fazla sorumluluk alırsa, o kadar fazla değişime uğramak zorunda kalır.
+
+- Sorumluluğun azaltılması demek değişime daha kolay adapte olmak demektir.
+
+-   Test
+- Bir sorumluluğu olan bir sınıfta çok daha az sayıda test-case olacaktır.
+
+-   Daha az bağımlılık
+- Tek bir sınıfta daha tek bir sorumluluğunun olması daha az bağımlılık sağlayacaktır.
+
+-   Yalın ve anlaşılır yapılar
+- Daha az sorumluluk daha yalın veya küçük yapılar ulaşmasını sağlar. Daha küçük yapılar ise monolitik yapılara
+  göre çok daha avantajlıdır ve kod anlaşılırlığını/okunurluğunu artırır.
