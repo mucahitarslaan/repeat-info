@@ -1,0 +1,9 @@
+- Kodlarımızda herhangi bir değişiklik yapmaya gerek duymadan alt sınıfları,
+  türedikleri(üst) sınıfların yerine kullanabilmeliyiz.
+
+- Türeyen sınıf yani alt sınıflar ana(üst) sınıfın tüm özelliklerini ve metotlarını
+  aynı işlevi gösterecek şekilde kullanabilme ve kendine ait yeni özellikler barındırabilmelidir.
+
+- Alt seviye sınıflardan oluşan nesnelerin/sınıfların, ana(üst) sınıfın nesneleri ile yer değiştirdikleri zaman,
+  aynı davranışı sergilemesi gerekmektedir. Türetilen sınıflar, türeyen sınıfların tüm özelliklerini kullanabilmelidir.
+
