@@ -11,7 +11,7 @@
 - Bir sorumluluğu olan bir sınıfta çok daha az sayıda test-case olacaktır.
 
 -   Daha az bağımlılık
-- Tek bir sınıfta daha tek bir sorumluluğunun olması daha az bağımlılık sağlayacaktır.
+- Tek bir sınıfta tek bir sorumluluğunun olması daha az bağımlılık sağlayacaktır.
 
 -   Yalın ve anlaşılır yapılar
 - Daha az sorumluluk daha yalın veya küçük yapılar ulaşmasını sağlar. Daha küçük yapılar ise monolitik yapılara
