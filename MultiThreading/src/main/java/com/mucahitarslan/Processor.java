@@ -6,15 +6,9 @@ public class Processor extends Thread{
     @Override
     public void run() {
         while (running){
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
             System.out.println("Merhaba");
         }
     }
-
     public void shotdown(){
         this.running = false;
     }
