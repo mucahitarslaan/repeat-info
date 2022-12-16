@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Product {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "product_id")
     private int id;
 
@@ -26,7 +26,7 @@ public class Product {
     private double unitPrice;
 
     @Column(name = "units_in_stock")
-    private String unitsInStock;
+    private short unitsInStock;
 
     @Column(name = "quantity_per_unit")
     private String quantityPerUnit;
