@@ -24,8 +24,47 @@ public class ProductsController {
         return productService.getAll();
     }
 
+    @GetMapping("/getAllByPage")
+    public DataResult<List<Product>> getAll(int pageNo, int pageSize){
+        return productService.getAll(pageNo - 1,pageSize);
+    }
+
+    @GetMapping("/getAllSorted")
+    public DataResult<List<Product>> getAllSorted(){
+        return productService.getAllSorted();
+    }
+
     @PostMapping("/add")
     public Result add(@RequestBody Product product){
         return productService.add(product);
     }
+
+    @GetMapping("/getByProductName")
+    public DataResult<Product> getByProductName(@RequestParam String productName){
+        return productService.findByProductName(productName);
+    }
+
+    @GetMapping("/getByProductNameAndCategory")
+    public DataResult<Product> getByProductNameAndCategory(@RequestParam(name = "productName") String productName,
+                                                           @RequestParam(name = "categoryId") int categoryId){
+        return productService.findByProductNameAndCategoryCategoryId(productName,categoryId);
+    }
+
+    @GetMapping("/getByProductNameOrCategoryId")
+    public DataResult<Product> getByProductNameOrCategoryId(@RequestParam(name = "productName") String productName,
+                                                           @RequestParam(name = "categoryId") int categoryId){
+        return productService.findByProductNameAndCategoryCategoryId(productName,categoryId);
+    }
+
+    @GetMapping("/getByCategoryIdIn")
+    public DataResult<List<Product>> getByCategoryIdIn(List<Integer> categories){
+        return productService.findByCategoryIdIn(categories);
+    }
+
+    @GetMapping("/getByProductNameContains")
+    public DataResult<List<Product>> getByProductNameContains(@RequestParam(name = "productName") String productName){
+        return productService.findByProductNameContains(productName);
+    }
+
+
 }
